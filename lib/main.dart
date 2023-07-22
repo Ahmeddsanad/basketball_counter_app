@@ -45,7 +45,9 @@ class BasketCounterApp extends StatelessWidget {
                         ),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          teamAPoints++;
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
                           // primary: Colors.teal --> removed in news versions
@@ -67,7 +69,9 @@ class BasketCounterApp extends StatelessWidget {
                       //   height: 10.0,
                       // ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          teamAPoints = teamAPoints + 2;
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
                           // primary: Colors.teal --> removed in news versions
@@ -89,7 +93,9 @@ class BasketCounterApp extends StatelessWidget {
                       //   height: 10.0,
                       // ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          teamAPoints = teamAPoints + 3;
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
                           // primary: Colors.teal --> removed in news versions
@@ -137,7 +143,9 @@ class BasketCounterApp extends StatelessWidget {
                         ),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          teamBPoints++;
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
                           // primary: Colors.teal --> removed in news versions
@@ -159,7 +167,9 @@ class BasketCounterApp extends StatelessWidget {
                       //   height: 10.0,
                       // ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          teamBPoints = teamBPoints + 2;
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
                           // primary: Colors.teal --> removed in news versions
@@ -181,7 +191,10 @@ class BasketCounterApp extends StatelessWidget {
                       //   height: 10.0,
                       // ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          teamBPoints = teamBPoints + 3;
+                          print(teamBPoints);
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
                           // primary: Colors.teal --> removed in news versions
@@ -205,7 +218,10 @@ class BasketCounterApp extends StatelessWidget {
               ],
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                teamAPoints = 0;
+                teamBPoints = 0;
+              },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.teal,
                 // primary: Colors.teal --> removed in news versions
