@@ -19,176 +19,207 @@ class BasketCounterApp extends StatelessWidget {
           title: const Text('Points Counter'),
           backgroundColor: Colors.teal,
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Column(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                const Text(
-                  'Team A',
-                  style: TextStyle(
-                    fontSize: 32.0,
+                Container(
+                  height: 500,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const Text(
+                        'Team A',
+                        style: TextStyle(
+                          fontSize: 32.0,
+                        ),
+                      ),
+                      const Text(
+                        '0',
+                        style: TextStyle(
+                          fontSize: 150.0,
+                        ),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.teal,
+                          // primary: Colors.teal --> removed in news versions
+                          elevation: 0.0, // --> remove shadow below button
+                          minimumSize: const Size(
+                            150,
+                            50,
+                          ),
+                        ),
+                        child: const Text(
+                          'Add 1 Point',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                      // SizedBox(
+                      //   height: 10.0,
+                      // ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.teal,
+                          // primary: Colors.teal --> removed in news versions
+                          elevation: 0.0, // --> remove shadow below button
+                          minimumSize: const Size(
+                            150,
+                            50,
+                          ),
+                        ),
+                        child: const Text(
+                          'Add 2 Point',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                      // SizedBox(
+                      //   height: 10.0,
+                      // ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.teal,
+                          // primary: Colors.teal --> removed in news versions
+                          elevation: 0.0, // --> remove shadow below button
+                          minimumSize: const Size(
+                            150,
+                            50,
+                          ),
+                        ),
+                        child: const Text(
+                          'Add 3 Point',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                const Text(
-                  '0',
-                  style: TextStyle(
-                    fontSize: 150.0,
+                Container(
+                  height: 450,
+                  child: VerticalDivider(
+                    indent: 50,
+                    endIndent: 50,
+                    color: Colors.grey[400],
+                    thickness: 2,
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.teal,
-                    // primary: Colors.teal --> removed in news versions
-                    elevation: 0.0, // --> remove shadow below button
-                    minimumSize: const Size(
-                      150,
-                      50,
-                    ),
+                Container(
+                  height: 500,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      const Text(
+                        'Team B',
+                        style: TextStyle(
+                          fontSize: 32.0,
+                        ),
+                      ),
+                      const Text(
+                        '0',
+                        style: TextStyle(
+                          fontSize: 150.0,
+                        ),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.teal,
+                          // primary: Colors.teal --> removed in news versions
+                          elevation: 0.0, // --> remove shadow below button
+                          minimumSize: const Size(
+                            150,
+                            50,
+                          ),
+                        ),
+                        child: const Text(
+                          'Add 1 Point',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                      // SizedBox(
+                      //   height: 10.0,
+                      // ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.teal,
+                          // primary: Colors.teal --> removed in news versions
+                          elevation: 0.0, // --> remove shadow below button
+                          minimumSize: const Size(
+                            150,
+                            50,
+                          ),
+                        ),
+                        child: const Text(
+                          'Add 2 Point',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                      // SizedBox(
+                      //   height: 10.0,
+                      // ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.teal,
+                          // primary: Colors.teal --> removed in news versions
+                          elevation: 0.0, // --> remove shadow below button
+                          minimumSize: const Size(
+                            150,
+                            50,
+                          ),
+                        ),
+                        child: const Text(
+                          'Add 3 Point',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                  child: const Text(
-                    'Add 1 Point',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18.0,
-                    ),
-                  ),
-                ),
-                const Spacer(
-                  flex: 1,
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.teal,
-                    // primary: Colors.teal --> removed in news versions
-                    elevation: 0.0, // --> remove shadow below button
-                    minimumSize: const Size(
-                      150,
-                      50,
-                    ),
-                  ),
-                  child: const Text(
-                    'Add 2 Point',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18.0,
-                    ),
-                  ),
-                ),
-                const Spacer(
-                  flex: 1,
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.teal,
-                    // primary: Colors.teal --> removed in news versions
-                    elevation: 0.0, // --> remove shadow below button
-                    minimumSize: const Size(
-                      150,
-                      50,
-                    ),
-                  ),
-                  child: const Text(
-                    'Add 3 Point',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18.0,
-                    ),
-                  ),
-                ),
-                const Spacer(
-                  flex: 12,
                 ),
               ],
             ),
-            VerticalDivider(
-              color: Colors.grey[300],
-              thickness: 2,
-            ),
-            Column(
-              children: [
-                const Text(
-                  'Team B',
-                  style: TextStyle(
-                    fontSize: 32.0,
-                  ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+                // primary: Colors.teal --> removed in news versions
+                elevation: 0.0, // --> remove shadow below button
+                minimumSize: const Size(
+                  150,
+                  50,
                 ),
-                const Text(
-                  '0',
-                  style: TextStyle(
-                    fontSize: 150.0,
-                  ),
+              ),
+              child: const Text(
+                'Reset',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18.0,
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.teal,
-                    // primary: Colors.teal --> removed in news versions
-                    elevation: 0.0, // --> remove shadow below button
-                    minimumSize: const Size(
-                      150,
-                      50,
-                    ),
-                  ),
-                  child: const Text(
-                    'Add 1 Point',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18.0,
-                    ),
-                  ),
-                ),
-                const Spacer(
-                  flex: 1,
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.teal,
-                    // primary: Colors.teal --> removed in news versions
-                    elevation: 0.0, // --> remove shadow below button
-                    minimumSize: const Size(
-                      150,
-                      50,
-                    ),
-                  ),
-                  child: const Text(
-                    'Add 2 Point',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18.0,
-                    ),
-                  ),
-                ),
-                const Spacer(
-                  flex: 1,
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.teal,
-                    // primary: Colors.teal --> removed in news versions
-                    elevation: 0.0, // --> remove shadow below button
-                    minimumSize: const Size(
-                      150,
-                      50,
-                    ),
-                  ),
-                  child: const Text(
-                    'Add 3 Point',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18.0,
-                    ),
-                  ),
-                ),
-                const Spacer(
-                  flex: 12,
-                ),
-              ],
+              ),
             ),
           ],
         ),
