@@ -53,7 +53,9 @@ class _BasketCounterAppState extends State<BasketCounterApp> {
                       ),
                       ElevatedButton(
                         onPressed: () {
-                          teamAPoints++;
+                          setState(() {
+                            teamAPoints++;
+                          });
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
@@ -77,7 +79,9 @@ class _BasketCounterAppState extends State<BasketCounterApp> {
                       // ),
                       ElevatedButton(
                         onPressed: () {
-                          teamAPoints = teamAPoints + 2;
+                          setState(() {
+                            teamAPoints += 2;
+                          });
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
@@ -101,7 +105,9 @@ class _BasketCounterAppState extends State<BasketCounterApp> {
                       // ),
                       ElevatedButton(
                         onPressed: () {
-                          teamAPoints = teamAPoints + 3;
+                          setState(() {
+                            teamAPoints += 3;
+                          });
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
@@ -151,7 +157,9 @@ class _BasketCounterAppState extends State<BasketCounterApp> {
                       ),
                       ElevatedButton(
                         onPressed: () {
-                          teamBPoints++;
+                          setState(() {
+                            teamBPoints++;
+                          });
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
@@ -175,7 +183,9 @@ class _BasketCounterAppState extends State<BasketCounterApp> {
                       // ),
                       ElevatedButton(
                         onPressed: () {
-                          teamBPoints = teamBPoints + 2;
+                          setState(() {
+                            teamBPoints += 2;
+                          });
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
@@ -199,8 +209,9 @@ class _BasketCounterAppState extends State<BasketCounterApp> {
                       // ),
                       ElevatedButton(
                         onPressed: () {
-                          teamBPoints = teamBPoints + 3;
-                          print(teamBPoints);
+                          setState(() {
+                            teamBPoints += 3;
+                          });
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
@@ -226,8 +237,10 @@ class _BasketCounterAppState extends State<BasketCounterApp> {
             ),
             ElevatedButton(
               onPressed: () {
-                teamAPoints = 0;
-                teamBPoints = 0;
+                setState(() {
+                  teamAPoints = 0;
+                  teamBPoints = 0;
+                });
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.teal,
