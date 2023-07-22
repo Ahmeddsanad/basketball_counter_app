@@ -6,11 +6,18 @@ void main() {
   runApp(BasketCounterApp());
 }
 
-class BasketCounterApp extends StatelessWidget {
+class BasketCounterApp extends StatefulWidget {
   BasketCounterApp({super.key});
 
+  @override
+  State<BasketCounterApp> createState() => _BasketCounterAppState();
+}
+
+class _BasketCounterAppState extends State<BasketCounterApp> {
   int teamAPoints = 0;
+
   int teamBPoints = 0;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
