@@ -19,7 +19,88 @@ class BasketCounterApp extends StatelessWidget {
           title: const Text('Points Counter'),
           backgroundColor: Colors.teal,
         ),
-      body: ,
+        body: Column(
+          children: [
+            const Text(
+              'Team A',
+              style: TextStyle(
+                fontSize: 32.0,
+              ),
+            ),
+            const Text(
+              '0',
+              style: TextStyle(
+                fontSize: 150.0,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+                // primary: Colors.teal --> removed in news versions
+                elevation: 0.0, // --> remove shadow below button
+                minimumSize: const Size(
+                  150,
+                  50,
+                ),
+              ),
+              child: const Text(
+                'Add 1 Point',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18.0,
+                ),
+              ),
+            ),
+            const Spacer(
+              flex: 1,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+                // primary: Colors.teal --> removed in news versions
+                elevation: 0.0, // --> remove shadow below button
+                minimumSize: const Size(
+                  150,
+                  50,
+                ),
+              ),
+              child: const Text(
+                'Add 2 Point',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18.0,
+                ),
+              ),
+            ),
+            const Spacer(
+              flex: 1,
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.teal,
+                // primary: Colors.teal --> removed in news versions
+                elevation: 0.0, // --> remove shadow below button
+                minimumSize: const Size(
+                  150,
+                  50,
+                ),
+              ),
+              child: const Text(
+                'Add 3 Point',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 18.0,
+                ),
+              ),
+            ),
+            const Spacer(
+              flex: 12,
+            ),
+          ],
+        ),
       ),
     );
   }
