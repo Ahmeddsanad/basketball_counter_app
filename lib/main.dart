@@ -3,12 +3,14 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const BasketCounterApp());
+  runApp(BasketCounterApp());
 }
 
 class BasketCounterApp extends StatelessWidget {
-  const BasketCounterApp({super.key});
+  BasketCounterApp({super.key});
 
+  int teamAPoints = 0;
+  int teamBPoints = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,8 +38,8 @@ class BasketCounterApp extends StatelessWidget {
                           fontSize: 32.0,
                         ),
                       ),
-                      const Text(
-                        '0',
+                      Text(
+                        '$teamAPoints',
                         style: TextStyle(
                           fontSize: 150.0,
                         ),
@@ -122,14 +124,14 @@ class BasketCounterApp extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      const Text(
+                      Text(
                         'Team B',
                         style: TextStyle(
                           fontSize: 32.0,
                         ),
                       ),
-                      const Text(
-                        '0',
+                      Text(
+                        '$teamBPoints',
                         style: TextStyle(
                           fontSize: 150.0,
                         ),
